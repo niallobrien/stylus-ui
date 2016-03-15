@@ -10,7 +10,7 @@
   padding 0 $base--spacing
   position relative
   width 100%
-  +width-min($mq--tablet)
+  +width-min($mq--desktop)
     padding 0
 
 // Using flexbox for the grid, inspired by Philip Walton:
@@ -19,7 +19,9 @@
 // available width, and the height of each .column with take
 // up the height of the tallest .column in the same .row.
 .row
-  display flex
+  display block
+  +width-min($mq--tablet)
+    display flex
   flex-direction column
   padding 0
   width 100%
@@ -30,7 +32,7 @@
   .row--no-padding
     padding 0
 
-    &> .column
+    & > .column
       padding 0
 
   // & + .row
@@ -38,7 +40,7 @@
   //   padding-top 0
 
   // Vertically Align Columns
-  // .row-* vertically aligns every .col in the .row
+  // .row--* vertically aligns every .col in the .row
   .row--top
     align-items flex-start
 

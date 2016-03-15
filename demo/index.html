@@ -370,7 +370,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       certain CSS elements easier.
       The mixins you're most likely to use the most are <code>rem()</code> and the media query mixins.
     </p>
-    <h5 class="title">REM</h5>
+    <strong>REM</strong>
     <p>Instead of working with <code>px</code> values, simply pass the pixel value to the rem mixin. We set the <code>$base--font-size</code>
       in <code>settings.styl</code> and apply it the the <code>html</code> element in
       <code>foundations/_base.styl</code>.
@@ -382,7 +382,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   font-size rem(12)</span></code></pre>
     </div>
 
-    <h5 class="title">Media Queries</h5>
+    <strong>Media Queries</strong>
     <p>
       Stylus-UI takes a mobile first approach to responsive design, so should you need to adjust styles for tablet or
       desktop, you will need to use media queries.
@@ -391,7 +391,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
     </p>
     <div class="example">
 <pre class="code prettyprint"><code class="code-content"><span class="com">.navigation-item
-  $color--primary
+  color $color--primary
   font-size rem(12)
 
   // adjust the font size for tablet up
