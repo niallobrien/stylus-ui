@@ -1,8 +1,8 @@
 {
   "name": "stylus-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A minimalist Stylus framework.",
-  "homepage": "http://stylus-ui.github.io",
+  "homepage": "http://niallobrien.github.io/stylus-ui",
   "repository": "niallobrien/stylus-ui",
   "license": "MIT",
   "author": "Niall O'Brien <me@niallobrien.me>",

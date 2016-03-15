@@ -20,7 +20,31 @@
     <favorites_list name="stylus-ui" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -41,15 +65,16 @@
         <option value="$PROJECT_DIR$/src/foundations/_form.styl" />
         <option value="$PROJECT_DIR$/src/foundations/_utility.styl" />
         <option value="$PROJECT_DIR$/src/foundations/_code.styl" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/assets/styles/foundations/_code.styl" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/assets/styles/foundations/_button.styl" />
         <option value="$PROJECT_DIR$/public/styles/main.css" />
         <option value="$PROJECT_DIR$/contributing.md" />
         <option value="$PROJECT_DIR$/license" />
         <option value="$PROJECT_DIR$/demo/index.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -134,7 +159,7 @@
     <property name="editor.config.accepted" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js-jscs-package" value="/usr/local/lib/node_modules/jscs" />
-    <property name="SearchEverywhereHistoryKey" value="grid&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/foundations/_grid.styl&#10;index&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/demo/index.html&#10;util&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/foundations/_utility.styl&#10;setting&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/settings.styl&#10;index.html&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/demo/index.html&#10;code&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/foundations/_code.styl&#10;utili&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_utility.styl&#10;stylus&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/stylus-ui.styl&#10;settin&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/settings.styl&#10;form&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_form.styl&#10;base&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_base.styl&#10;button&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_button.styl&#10;gulp&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/gulpfile.js&#10;typ&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_typography.styl&#10;stylus-ui&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/stylus-ui.styl&#10;sett&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/settings.styl&#10;package&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/package.js" />
+    <property name="SearchEverywhereHistoryKey" value=".gitigno&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/.gitignore&#10;index&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/demo/index.html&#10;grid&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/foundations/_grid.styl&#10;util&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/foundations/_utility.styl&#10;setting&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/settings.styl&#10;index.html&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/demo/index.html&#10;code&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/assets/styles/foundations/_code.styl&#10;utili&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_utility.styl&#10;stylus&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/stylus-ui.styl&#10;settin&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/settings.styl&#10;form&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_form.styl&#10;base&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_base.styl&#10;button&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_button.styl&#10;gulp&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/gulpfile.js&#10;typ&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/foundations/_typography.styl&#10;stylus-ui&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/stylus-ui.styl&#10;sett&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/src/settings.styl&#10;package&#9;FILE&#9;file:///Users/niall/dev/my_projects/stylus-ui/package.js" />
     <property name="editorconfig.notification" value="spaces" />
   </component>
   <component name="RunManager">
@@ -198,19 +223,19 @@
       <updated>1457999001427</updated>
       <workItem from="1457999002727" duration="1155000" />
       <workItem from="1458000368541" duration="5280000" />
-      <workItem from="1458034736466" duration="21559000" />
+      <workItem from="1458034736466" duration="21864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27994000" />
+    <option name="totallyTimeSpent" value="28299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -394,17 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/foundations/_code.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
@@ -498,14 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/foundations/_grid.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -541,14 +547,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -575,11 +573,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="620" column="7" selection-start-line="620" selection-start-column="6" selection-end-line="620" selection-end-column="7" />
+        <state relative-caret-position="272">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#path#1;n#svg#0;n#a#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
