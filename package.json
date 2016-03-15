@@ -1,0 +1,67 @@
+{
+  "name": "stylus-ui",
+  "version": "1.0.0",
+  "description": "A minimalist Stylus framework.",
+  "homepage": "http://stylus-ui.github.io",
+  "repository": "niallobrien/stylus-ui",
+  "license": "MIT",
+  "author": "Niall O'Brien <me@niallobrien.me>",
+  "main": "assets/styles/stylus-ui.styl",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "css3",
+    "front-end",
+    "framework",
+    "html",
+    "html5",
+    "kickstarter",
+    "less",
+    "responsive",
+    "mobile",
+    "mobile-first",
+    "postcss",
+    "responsive",
+    "sass",
+    "scss",
+    "stylus",
+    "stylus-ui"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "bower.json",
+    "component.json",
+    "composer.json",
+    "contributing.md",
+    "gruntfile.js",
+    "package.js",
+    "package.json",
+    "src"
+  ],
+  "dependencies": {
+    "normalize.css": "latest"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-exec": "^2.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-watch": "^4.3.5",
+    "stylus-mixins": "^0.2.1"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  }
+}

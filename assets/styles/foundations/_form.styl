@@ -1,0 +1,51 @@
+
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+input[type='email']
+input[type='number']
+input[type='password']
+input[type='search']
+input[type='tel']
+input[type='text']
+input[type='url']
+textarea
+select
+  background-color transparent
+  border rem(1) solid $color--quaternary
+  border-radius rem(4)
+  box-shadow none
+  box-sizing border-box
+  font-size rem($base--font-size)
+  height rem(38)
+  padding $base--spacing * .6 $base--spacing * .5
+  width 100%
+
+  &:focus
+    border rem(1) solid $color--primary
+    outline 0
+
+textarea
+  padding-bottom rem(6)
+  padding-top rem(6)
+  min-height $base--spacing * 4
+
+label
+legend
+  font-size rem($base--font-size)
+  font-weight 700
+  display block
+  margin-bottom $base--spacing * .5
+
+fieldset
+  border-width 0
+  padding 0
+
+input[type='checkbox']
+input[type='radio']
+  display inline
+
+.label--inline
+  font-weight normal
+  display inline-block
+  margin-left $base--spacing * .25

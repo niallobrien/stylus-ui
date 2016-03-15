@@ -1,0 +1,104 @@
+
+// Settings
+// ========
+// Project specific settings which can be changed to modify the basic look and
+// feel of the project with little effort.
+//
+// 1. BREAKPOINTS AND MEDIA QUERIES
+// 2. COLOURS
+// 3. TYPEFACES
+// 4. BASE STYLES
+// 6. GRID
+// 5. DEBUG STYLING
+//
+
+
+//
+// 1. BREAKPOINTS AND MEDIA QUERIES
+// Setup standard widths to pass to media queries
+//
+
+$mq--mobile--portrait  = 300px
+$mq--mobile--landscape = 400px
+$mq--tablet--portrait  = 550px
+$mq--tablet--landscape = 800px
+$mq--desktop--small    = 960px
+$mq--desktop--medium   = 1280px
+$mq--desktop--large    = 1600px
+
+// Common aliases
+$mq--mobile  = $mq--mobile--portrait
+$mq--tablet  = $mq--tablet--portrait
+$mq--desktop = $mq--desktop--small
+
+
+//
+// 2. COLOURS
+//
+
+$color--initial = $color--white
+$color--primary = $color--blue
+$color--secondary = #1eaedb
+$color--tertiary = #f4f5f6
+$color--quaternary = #d1d1d1
+
+// Common Project Colours
+$color--blue  = #33c3f0
+$color--black = #222
+$color--grey  = #ccc
+$color--grey-alt = #606C76
+$color--white = #fff
+
+// Default Notification Colours
+$color--success = #47a967
+$color--notice  = #4791a9
+$color--warning = #dc7f2a
+$color--error   = #ca4427
+
+
+//
+// 3. TYPEFACES
+// Amend variable names to suit fonts used.
+//
+
+$font--arial   = Arial, Helvetica, sans-serif
+$font--georgia = Georgia, serif
+$font--roboto = 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font--gotham-a = 'Gotham Rounded A', Arial, Helvetica, sans-serif
+$font--gotham-b = 'Gotham Rounded B', Arial, Helvetica, sans-serif
+
+
+//
+// 4. BASE STYLES
+//
+
+$base--font-heading = $font--gotham-a
+$base--font-body    = $font--gotham-b
+$base--font-color   = $color--black
+$base--font-size    = 16px
+$base--line-height  = 1.6
+$base--spacing      = rem(20)
+$base--body-bg      = $color--white
+$base--max-width    = rem(1280)
+
+$content--gutter = $base--spacing
+$content--gutter--mobile = ($base--spacing / 2)
+
+
+//
+// 5. GRID
+//
+
+$grid--gutter = $base--spacing * .5
+
+
+//
+// 6. DEBUG STYLING
+// Options are
+// * error: Only critical bugs are shown
+// * warning: Show error and warning bugs
+// * all: Show error and warning bugs, as well as general tips / minor bugs
+//
+
+$debug--mode = false
+$debug--level = 'all'

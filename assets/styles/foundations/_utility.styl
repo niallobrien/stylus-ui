@@ -1,0 +1,42 @@
+
+// Utility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Float either direction
+.float-left
+  float left
+
+.float-right
+  float right
+
+// Text alignment
+.text-left
+  text-align left
+
+.text-right
+  text-align right
+
+// Padding
+.padding-top
+  padding-top $base--spacing
+
+.padding-bottom
+  padding-bottom $base--spacing
+
+.padding-top--none
+  padding-top 0 !important
+
+.padding-bottom--none
+  padding-bottom 0 !important
+
+// Clear a float with .clearfix
+.clearfix
+  *zoom 1
+
+  &:after
+  &:before
+    content ''
+    display table
+
+  &:after
+    clear both
