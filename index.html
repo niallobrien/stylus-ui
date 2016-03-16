@@ -271,7 +271,7 @@
       we recommend that you download the .zip file and place the extracted files in your project.
     </p>
     <p>For compilation we've included a <code>gulpfile.js</code> which compiles
-      <code>assets/styles/stylus-ui.styl</code> by default and outputs the compiled assets to <code>public/assets/main.styl</code>.
+      <code>assets/styles/stylus-ui.styl</code> by default and outputs the compiled assets to <code>public/assets/main.css</code> and <code>public/assets/main.min.css</code>.
       You should add a CSS Reset in the header of your project (normalize is a good choice, see the example below), then
       add the Stylus-UI compiled stylesheet after the CSS Reset. Once downloaded and placed within your project, please
       follow the instructions below.</p>
@@ -364,9 +364,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       smaller sizes.
       The max width can be changed by adjusting the <code>$base--max-width</code> variable in <code>foundations/_settings.styl</code>
       and all columns will resize accordingly.
-      Stylus-UI is different than most because of its use of the <strong>CSS Flexible Box Layout Module
-        standard</strong>.
-      Simply add columns you want in a row, and they'll evenly take up
+      The grid utilises Flexbox. Simply add columns you want in a row, and they'll evenly take up
       the available space. If you want three columns, add three columns, if you want five columns, add five
       columns.
       There is no restriction on number of columns, but we advise you to use your common sense.
