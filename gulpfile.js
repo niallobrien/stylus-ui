@@ -23,9 +23,7 @@ gulp.task('clean', function () {
 })
 
 gulp.task('watch', function() {
-    gulp.watch(['assets/styles/**/*.styl', './gulpfile.js']).on('change', function (file) {
-        gulp.start('default')
-    })
+    gulp.watch('assets/styles/**/*.styl', ['build'])
 })
 
 gulp.task('styles', function() {

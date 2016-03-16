@@ -254,7 +254,7 @@
     <section class="container padding-top--none padding-bottom">
       <h1 class="title">Stylus-UI</h1>
       <p class="description">A minimalist Stylus boilerplate</p>
-      <a class="button" href="#getting-started">Getting Started</a>
+      <a class="button" href="#get-started">Get Started</a>
     </section>
   </header>
 
@@ -264,14 +264,14 @@
       with fewer properties to reset resulting in cleaner code. No framework, just a solid starting point using some conventions we've established over the years at <a href="http://clock.co.uk" target="_blank">Clock</a>.</p>
   </section>
 
-  <section class="container" id="getting-started">
+  <section class="container" id="get-started">
     <h5 class="title">Getting Started</h5>
     <p>Stylus-UI provides minimal styles for you to get started with your project and so to ensure that you are never
       fighting the boilerplate trying to customise it or override styles,
       we recommend that you download the .zip file and place the extracted files in your project.
     </p>
     <p>For compilation we've included a <code>gulpfile.js</code> which compiles
-      <code>assets/styles/stylus-ui.styl</code> by default and outputs the compiled assets to <code>public/assets/main.styl</code>.
+      <code>assets/styles/stylus-ui.styl</code> by default and outputs the compiled assets to <code>public/assets/main.css</code> and <code>public/assets/main.min.css</code>.
       You should add a CSS Reset in the header of your project (normalize is a good choice, see the example below), then
       add the Stylus-UI compiled stylesheet after the CSS Reset. Once downloaded and placed within your project, please
       follow the instructions below.</p>
@@ -364,9 +364,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       smaller sizes.
       The max width can be changed by adjusting the <code>$base--max-width</code> variable in <code>foundations/_settings.styl</code>
       and all columns will resize accordingly.
-      Stylus-UI is different than most because of its use of the <strong>CSS Flexible Box Layout Module
-        standard</strong>.
-      Simply add columns you want in a row, and they'll evenly take up
+      The grid utilises Flexbox. Simply add columns you want in a row, and they'll evenly take up
       the available space. If you want three columns, add three columns, if you want five columns, add five
       columns.
       There is no restriction on number of columns, but we advise you to use your common sense.
@@ -767,22 +765,6 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
 </span><span class="tag">&lt;/table&gt;</span><span class="pln">
   </span></code></pre>
-  </section>
-
-  <section class="container" id="codes">
-    <h5 class="title">Codes</h5>
-    <p>The Code element represents a fragment of computer code. Just wrap anything in a <code>
-      &lt;code&gt;</code> and it
-      will appear like this. if you need a block, by default, enter the <code>&lt;code&gt;</code> within the
-      <code>&lt;pre&gt;</code>
-      element.</p>
-    <div class="example">
-<pre><code>.navigation-item
-  color $color--blue
-</code></pre>
-    </div>
-    <pre class="code prettyprint lang-html"><code class="code-content"><span class="com">.navigation-item
-  color $color--blue</span></code></pre>
   </section>
 
   <section class="container" id="utilities">
