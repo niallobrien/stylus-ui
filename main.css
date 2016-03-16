@@ -143,9 +143,8 @@ select {
   border-radius: 0.25rem;
   box-shadow: none;
   box-sizing: border-box;
-  font-size: 1rem;
   height: 2.375rem;
-  padding: 0.75rem 0.625rem;
+  padding: 0 0.625rem;
   width: 100%;
 }
 input[type='email']:focus,
@@ -193,16 +192,21 @@ input[type='radio'] {
   position: relative;
   width: 100%;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 960px) {
   .container {
     padding: 0;
   }
 }
 .row {
-  display: flex;
+  display: block;
   flex-direction: column;
   padding: 0;
   width: 100%;
+}
+@media screen and (min-width: 650px) {
+  .row {
+    display: flex;
+  }
 }
 .row .row-wrap {
   flex-wrap: wrap;
@@ -210,7 +214,7 @@ input[type='radio'] {
 .row .row--no-padding {
   padding: 0;
 }
-.row .row--no-padding> .column {
+.row .row--no-padding > .column {
   padding: 0;
 }
 .row .row--top {
@@ -323,7 +327,7 @@ input[type='radio'] {
   flex: 0 0 90%;
   max-width: 90%;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   .row {
     flex-direction: row;
     width: 100%;
@@ -338,6 +342,251 @@ input[type='radio'] {
   }
   .row .column:last-of-type {
     padding-right: 0;
+  }
+}
+.row .column.column--10 {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+.row .column.column--20 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.row .column.column--25 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.row .column.column--30 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.row .column.column--33 {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+.row .column.column--40 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.row .column.column--50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.row .column.column--60 {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.row .column.column--66 {
+  flex: 0 0 66%;
+  max-width: 66%;
+}
+.row .column.column--75 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.row .column.column--80 {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.row .column.column--90 {
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--10-mobile {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--20-mobile {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--25-mobile {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--30-mobile {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--33-mobile {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--40-mobile {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--50-mobile {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--60-mobile {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--66-mobile {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--75-mobile {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--80-mobile {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .row .column.column--90-mobile {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--10-tablet {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--20-tablet {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--25-tablet {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--30-tablet {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--33-tablet {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--40-tablet {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--50-tablet {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--60-tablet {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--66-tablet {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--75-tablet {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--80-tablet {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .row .column.column--90-tablet {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .testing {
+    color: #f00;
+  }
+  .row .column.column--10-desktop {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+  .row .column.column--20-desktop {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .row .column.column--25-desktop {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .row .column.column--30-desktop {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .row .column.column--33-desktop {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  .row .column.column--40-desktop {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .row .column.column--50-desktop {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .row .column.column--60-desktop {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .row .column.column--66-desktop {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+  .row .column.column--75-desktop {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .row .column.column--80-desktop {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .row .column.column--90-desktop {
+    flex: 0 0 90%;
+    max-width: 90%;
   }
 }
 a {
@@ -493,6 +742,12 @@ h6 {
 }
 .padding-bottom {
   padding-bottom: 1.25rem;
+}
+.padding-top--large {
+  padding-top: 5rem;
+}
+.padding-bottom--large {
+  padding-bottom: 5rem;
 }
 .padding-top--none {
   padding-top: 0 !important;
