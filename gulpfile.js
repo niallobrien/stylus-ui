@@ -2,7 +2,6 @@
 // npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp-plumber gulp-clean gulp-watch gulp-rename gulp-size gulp-notify gulp-exec
 var gulp = require('gulp'),
   stylus = require('gulp-stylus'),
-  sourcemaps = require('gulp-sourcemaps'),
   autoprefixer = require('gulp-autoprefixer'),
   cssnano = require('gulp-cssnano'),
   plumber = require('gulp-plumber'),
@@ -29,13 +28,11 @@ gulp.task('watch', function() {
 gulp.task('styles', function() {
 	gulp.src('assets/styles/stylus-ui.styl')
   .pipe(plumber())
-  .pipe(sourcemaps.init())
   .pipe(stylus({ paths:  ['node_modules'] }))
   .pipe(autoprefixer('last 1 version'))
   .pipe(rename('main.css'))
   .pipe(gulp.dest('./public/styles/'))
   .pipe(cssnano('./public/styles/main.css'))
-  .pipe(sourcemaps.write('./'))
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('./public/styles/'))
   .pipe(size())
