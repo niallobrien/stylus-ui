@@ -1,6 +1,70 @@
-
 // Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+column(breakpoint, sizes)
+  // Explicit Column Percent Sizes
+  // By default each grid column will evenly distribute
+  // across the grid. However, you can specify individual
+  // columns to take up a certain size of the available area
+  if breakpoint == 'desktop'
+    +width-min($mq--desktop)
+      .testing
+        color red
+      for size in sizes
+        .row .column.column--{size}-desktop
+          if size == 34
+            size = 33
+          else if size == 67
+            size = 66
+          else
+            flex 0 0 (size)%
+            max-width (size)%
+
+  else if breakpoint == 'tablet'
+    for size in sizes
+      +width-range($mq--tablet, $mq--desktop)
+        .row .column.column--{size}-tablet
+          if size == 34
+            size = 33
+          else if size == 67
+            size = 66
+          else
+            flex 0 0 (size)%
+            max-width (size)%
+
+  else if breakpoint == 'mobile'
+    for size in sizes
+      +width-max($mq--tablet - 1)
+        .row .column.column--{size}-mobile
+          if size == 34
+            size = 33
+          else if size == 67
+            size = 66
+          else
+            flex 0 0 (size)%
+            max-width (size)%
+
+  else
+    for size in sizes
+      .row .column.column--{size}
+        if size == 34
+          size = 33
+        else if size == 67
+          size = 66
+        else
+          flex 0 0 (size)%
+          max-width (size)%
+
+// Can't pass the size in the for loop above into this mixin for some reason
+//column-outout(size)
+//  if size == 34
+//    size = 33
+//  else if size == 67
+//    size = 66
+//  else
+//    flex 0 0 (size)%
+//    max-width (size)%
 
 // .container is main centered wrapper with a max width of 1120rem (1120px)
 .container
@@ -35,6 +99,7 @@
     & > .column
       padding 0
 
+
   // & + .row
   //   margin-top -.5rem
   //   padding-top 0
@@ -63,94 +128,92 @@
     max-width 100%
     width 100%
 
-    // .column--* vertically aligns an individual .column
-    .col--top
-      align-self flex-start
 
-    .col--bottom
-      align-self flex-end
+.row .column
+  // .column--* vertically aligns an individual .column
+  .col--top
+    align-self flex-start
 
-    .col--center
-      align-self center
+  .col--bottom
+    align-self flex-end
 
-    // Column Offsets
-    &.column--offset-10
-      margin-left 10%
+  .col--center
+    align-self center
 
-    &.column--offset-20
-      margin-left 20%
+  // Column Offsets
+  &.column--offset-10
+    margin-left 10%
 
-    &.column--offset-25
-      margin-left 25%
+  &.column--offset-20
+    margin-left 20%
 
-    &.column--offset-33
-    &.column--offset-34
-      margin-left 33.3333%
+  &.column--offset-25
+    margin-left 25%
 
-    &.column--offset-50
-      margin-left 50%
+  &.column--offset-33
+  &.column--offset-34
+    margin-left 33.3333%
 
-    &.column--offset-66
-    &.column--offset-67
-      margin-left 66.6666%
+  &.column--offset-50
+    margin-left 50%
 
-    &.column--offset-75
-      margin-left 75%
+  &.column--offset-66
+  &.column--offset-67
+    margin-left 66.6666%
 
-    &.column--offset-80
-      margin-left 80%
+  &.column--offset-75
+    margin-left 75%
 
-    &.column--offset-90
-      margin-left 90%
+  &.column--offset-80
+    margin-left 80%
 
-    // Explicit Column Percent Sizes
-    // By default each grid column will evenly distribute
-    // across the grid. However, you can specify individual
-    // columns to take up a certain size of the available area
-    &.column--10
-      flex 0 0 10%
-      max-width 10%
+  &.column--offset-90
+    margin-left 90%
 
-    &.column--20
-      flex 0 0 20%
-      max-width 20%
+  &.column--10
+    flex 0 0 10%
+    max-width 10%
 
-    &.column--25
-      flex 0 0 25%
-      max-width 25%
+  &.column--20
+    flex 0 0 20%
+    max-width 20%
 
-    &.column--33
-    &.column--34
-      flex 0 0 33.3333%
-      max-width 33.3333%
+  &.column--25
+    flex 0 0 25%
+    max-width 25%
 
-    &.column--40
-      flex 0 0 40%
-      max-width 40%
+  &.column--33
+  &.column--34
+    flex 0 0 33.3333%
+    max-width 33.3333%
 
-    &.column--50
-      flex 0 0 50%
-      max-width 50%
+  &.column--40
+    flex 0 0 40%
+    max-width 40%
 
-    &.column--60
-      flex 0 0 60%
-      max-width 60%
+  &.column--50
+    flex 0 0 50%
+    max-width 50%
 
-    &.column--66 &.column--67
-      flex 0 0 66.6666%
-      max-width 66.6666%
+  &.column--60
+    flex 0 0 60%
+    max-width 60%
 
-    &.column--75
-      flex 0 0 75%
-      max-width 75%
+  &.column--66 &.column--67
+    flex 0 0 66.6666%
+    max-width 66.6666%
 
-    &.column--80
-      flex 0 0 80%
-      max-width 80%
+  &.column--75
+    flex 0 0 75%
+    max-width 75%
 
-    &.column--90
-      flex 0 0 90%
-      max-width 90%
+  &.column--80
+    flex 0 0 80%
+    max-width 80%
+
+  &.column--90
+    flex 0 0 90%
+    max-width 90%
 
 // Larger than mobile screen
 +width-min($mq--tablet)
@@ -170,3 +233,8 @@
 
       &:last-of-type
         padding-right 0
+
+column('', $column-sizes)
+column('mobile', $column-sizes)
+column('tablet', $column-sizes)
+column('desktop', $column-sizes)
