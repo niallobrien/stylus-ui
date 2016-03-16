@@ -44,6 +44,10 @@ input[type='radio']
   display inline
 
 .label--inline
-  font-weight normal
   display inline-block
   margin-left $base--spacing * .25
+  font-weight normal
+  font-size rem(12)
+  +width-min($mq--tablet)
+    font-size $base--font-size
+
