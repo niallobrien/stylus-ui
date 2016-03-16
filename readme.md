@@ -8,4 +8,4 @@ Stylus-UI provides a minimal setup of Stylus styles for a fast and clean startin
 
 ## License
 
-[MIT License](http://cjpatoilo.mit-license.org/) @ CJ Patoilo
+[MIT License](http://cjpatoilo.mit-license.org/) @ Niall O'Brien
