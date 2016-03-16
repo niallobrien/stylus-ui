@@ -205,39 +205,10 @@
       }
     }
 
-    /* Share */
-    .share,
-    .share-list,
-    .share-list a {
-      position: relative;
-      text-decoration: none;
-    }
-
-    .share-item {
-      display: inline-block;
-      margin: 1.0rem .1rem;
-    }
-
-    .share-icon {
-      background-color: #33c3f0;
-      border-radius: .4rem;
-      color: #ffffff;
-      display: block;
-      font-size: 1.5rem;
-      height: 2.2rem;
-      line-height: 2.2rem;
-      text-align: center;
-      width: 5.0rem;
-    }
-
-    .share-icon:hover {
-      background-color: #606c76;
-    }
-
     /* Form */
     .example-send-yourself-copy {
       float: right;
-      margin-top: 5px;
+      margin-top: 14px;
     }
 
     .example-send-yourself-copy label {
@@ -247,14 +218,18 @@
 
     .example-send-yourself-copy input {
       float: left;
-      margin: 6px;
+      margin: 1px 6px;
     }
 
-    @media (min-width: 40.0rem) {
-      .only-mobile {
-        display: none;
+    @media (min-width: 650px) {
+      .example-send-yourself-copy {
+        margin-top: 5px;
+      }
+      .example-send-yourself-copy input {
+        margin: 6px;
       }
     }
+
   </style>
 </head>
 <body>
@@ -284,34 +259,9 @@
   </header>
 
   <section class="container" id="why">
-    <h5 class="title">Why it's awesome?</h5>
+    <h5 class="title">Why use Stylus-UI</h5>
     <p>Stylus-UI provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity
-      with fewer properties to reset resulting in cleaner code. No framework, just a solid starting point.</p>
-    <div class="share">
-      <ul class="share-list">
-        <li class="share-item"><a href="https://github.com/niallobrien/stylus-ui" title="Share Stylus-UI on Github"
-                                  target="blank"><i class="icon fa fa-github share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/niallobrien/stylus-ui"
-                                  title="Share Stylus-UI on Facebook" target="blank"><i
-          class="icon fa fa-facebook share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://twitter.com/intent/tweet?text=Stylus-UI %7C A minimalist Stylus boilerplate&amp;url=#"
-                                  title="Share Stylus-UI on Twitter" target="blank"><i
-          class="icon fa fa-twitter share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://plus.google.com/share?url=https://github.com/niallobrien/stylus-ui"
-                                  title="Share stylus-ui on Google+" target="blank"><i
-          class="icon fa fa-google-plus share-icon"></i></a></li>
-        <li class="share-item only-mobile"><a
-          href="whatsapp://send?text=stylus-ui %7C A minimalist CSS boilerplate https://github.com/niallobrien/stylus-ui"
-          title="Share stylus-ui on Whatsapp" target="blank"><i class="icon fa fa-whatsapp share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://github.com/niallobrien/stylus-ui&amp;title=Stylus-UI | A minimalist Stylus boilerplate"
-                                  title="Share stylus-ui on LinkedIn" target="blank"><i
-          class="icon fa fa-linkedin share-icon"></i></a></li>
-      </ul>
-    </div>
+      with fewer properties to reset resulting in cleaner code. No framework, just a solid starting point using some conventions we've established over the years at <a href="http://clock.co.uk" target="_blank">Clock</a>.</p>
   </section>
 
   <section class="container" id="getting-started">
@@ -560,25 +510,18 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       <input class="button button--outline" type="button" value="button input">
     </div>
 
-    <pre class="code prettyprint"><code><span class="com">&lt;!-- Default Button --&gt;</span><span class="pln">
-</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">href</span><span
-      class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span
-      class="pln">Default Button</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+<pre class="code prettyprint"><code class="code-content"><span class="com">&lt;!-- Standard buttons --&gt;</span><span class="pln">
+</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Anchor button</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+</span><span class="tag">&lt;button&gt;</span><span class="pln">Button element</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"submit input"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"button input"</span><span class="tag">&gt;</span><span class="pln">
 
-</span><span class="com">&lt;!-- Outlined Button --&gt;</span><span class="pln">
-</span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button button--outline"</span><span class="tag">&gt;</span><span
-      class="pln">Outlined Button</span><span class="tag">&lt;/button&gt;</span><span class="pln">
-
-</span><span class="com">&lt;!-- Clear Button --&gt;</span><span class="pln">
-</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button button--clear"</span><span class="pln"> </span><span class="atn">type</span><span
-      class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span
-      class="pun">=</span><span class="atv">"Clear Button"</span><span class="tag">&gt;</span><span class="pln">
-
-</span><span
-      class="com">&lt;!-- Please note that modifiers are used to alter the default appearance of a .button --&gt;</span></code></pre>
+</span><span class="com">&lt;!-- Primary buttons --&gt;</span><span class="pln">
+</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button button--outline"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Anchor button</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+</span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button--outline"</span><span class="tag">&gt;</span><span class="pln">Button element</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button--outline"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"submit input"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button--outline"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"button input"</span><span class="tag">&gt;</span></code>
+</pre>
   </section>
 
   <section class="container" id="forms">
@@ -608,9 +551,9 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
         <fieldset>
           <label for="messageField">Message</label>
           <textarea placeholder="Please type your message..." id="messageField"></textarea>
-          <div class="example-send-yourself-copy float-right">
+          <div class="example-send-yourself-copy">
             <input type="checkbox" id="confirmField">
-            <label class="label-inline float-right" for="confirmField">Send a copy to yourself</label>
+            <label class="label--inline" for="confirmField">Send a copy to yourself</label>
           </div>
           <input class="float-left" type="submit" value="Send">
         </fieldset>
@@ -647,8 +590,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       class="tag">&gt;</span><span class="pln">Send a copy to yourself</span><span
       class="tag">&lt;/label&gt;</span><span class="pln">
     </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button-primary"</span><span class="pln"> </span><span
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span
       class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span
       class="atn">value</span><span class="pun">=</span><span class="atv">"Send"</span><span
       class="tag">&gt;</span><span class="pln">
