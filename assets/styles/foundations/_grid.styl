@@ -4,7 +4,7 @@
 
 column($namespace, $sizes)
   _column-output($sizes, $namespace)
-
+  _column-offsets($sizes, $namespace)
 
 _column-output($sizes, $namespace = false)
   $namespaceModifier = $namespace ? '-' + $namespace : ''
@@ -17,13 +17,15 @@ _column-output($sizes, $namespace = false)
       flex 0 0 ($size)%
       max-width ($size)%
 
-_column-offsets($sizes)
+_column-offsets($sizes, $namespace = false)
+  $namespaceModifier = $namespace ? '-' + $namespace : ''
+
   for $size in $sizes
     .row .column
-      if $size == 34 || $size == 67
-        $size = ($size - 1)
+      &.column--offset-{$size}{$namespaceModifier}
+        if $size == 34 || $size == 67
+          $size = ($size - 1)
 
-      &.column--offset-{$size}
         margin-left ($size)%
 
 
