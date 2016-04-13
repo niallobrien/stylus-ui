@@ -23,21 +23,20 @@ gulp.task('clean', function () {
 })
 
 gulp.task('watch', function() {
-    gulp.watch(['assets/styles/**/*.styl', './gulpfile.js']).on('change', function (file) {
-        gulp.start('default')
-    })
+    gulp.watch('assets/styles/**/*.styl', ['build'])
 })
 
 gulp.task('styles', function() {
 	gulp.src('assets/styles/stylus-ui.styl')
   .pipe(plumber())
-  .pipe(sourcemaps.init())
   .pipe(stylus({ paths:  ['node_modules'] }))
   .pipe(autoprefixer('last 1 version'))
   .pipe(rename('main.css'))
   .pipe(gulp.dest('./public/styles/'))
-  .pipe(cssnano('./public/styles/main.css'))
-  .pipe(sourcemaps.write('./'))
+  .pipe(sourcemaps.init())
+  .pipe(cssnano())
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest('./public/styles/'))
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('./public/styles/'))
   .pipe(size())

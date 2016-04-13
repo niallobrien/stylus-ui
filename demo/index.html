@@ -13,27 +13,27 @@
   <meta property="og:description"
         content="Stylus-UI provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.">
   <meta property="og:locale" content="en">
-  <meta property="og:site_name" content="Stylus-UI | A minimalist Stylus framework.">
-  <meta property="og:title" content="Stylus-UI | A minimalist Stylus framework.">
+  <meta property="og:site_name" content="Stylus-UI | A minimalist Stylus boilerplate.">
+  <meta property="og:title" content="Stylus-UI | A minimalist Stylus boilerplate.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://niallobrien.github.io/stylus-ui">
   <meta property="article:published_time" content="2015-12-25T01:00:00Z">
   <meta property="article:author" content="Niall O'Brien">
   <meta property="article:section" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:domain" content="Stylus-UI | A minimalist Stylus framework.">
+  <meta name="twitter:domain" content="Stylus-UI | A minimalist Stylus boilerplate.">
   <meta name="twitter:url" content="https://niallobrien.github.io/stylus-ui/">
   <meta name="twitter:site" content="https://niallobrien.github.io/stylus-ui/">
   <meta name="twitter:creator" content="Niall O'Brien">
-  <meta name="twitter:title" content="Stylus-UI | A minimalist Stylus framework.">
+  <meta name="twitter:title" content="Stylus-UI | A minimalist Stylus boilerplate.">
   <meta name="twitter:description"
         content="Stylus-UI provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code.">
-  <title>Stylus-UI | A minimalist Stylus framework.</title>
+  <title>Stylus-UI | A minimalist Stylus boilerplate.</title>
   <link rel="canonical" href="https://niallobrien.github.io/stylus-ui/">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../public/styles/main.min.css">
+  <link rel="stylesheet" href="../public/styles/main.css">
   <style type="text/css">
     /* Base */
     img {
@@ -91,8 +91,8 @@
       border-radius: 0.4rem;
       font-size: 0.6rem;
       text-transform: uppercase;
-      min-height: 2rem;
-      line-height: 2rem;
+      line-height: 1.2rem;
+      padding: 1rem 0;
       margin-bottom: 2rem;
       font-weight: 600;
       letter-spacing: .1rem;
@@ -205,39 +205,10 @@
       }
     }
 
-    /* Share */
-    .share,
-    .share-list,
-    .share-list a {
-      position: relative;
-      text-decoration: none;
-    }
-
-    .share-item {
-      display: inline-block;
-      margin: 1.0rem .1rem;
-    }
-
-    .share-icon {
-      background-color: #33c3f0;
-      border-radius: .4rem;
-      color: #ffffff;
-      display: block;
-      font-size: 1.5rem;
-      height: 2.2rem;
-      line-height: 2.2rem;
-      text-align: center;
-      width: 5.0rem;
-    }
-
-    .share-icon:hover {
-      background-color: #606c76;
-    }
-
     /* Form */
     .example-send-yourself-copy {
       float: right;
-      margin-top: 5px;
+      margin-top: 14px;
     }
 
     .example-send-yourself-copy label {
@@ -247,21 +218,25 @@
 
     .example-send-yourself-copy input {
       float: left;
-      margin: 6px;
+      margin: 1px 6px;
     }
 
-    @media (min-width: 40.0rem) {
-      .only-mobile {
-        display: none;
+    @media (min-width: 650px) {
+      .example-send-yourself-copy {
+        margin-top: 5px;
+      }
+      .example-send-yourself-copy input {
+        margin: 6px;
       }
     }
+
   </style>
 </head>
 <body>
 
 <main class="wrapper">
   <section>
-    <a class="hidden-xs github-corner" href="https://github.com/#" title="Stylus-UI on Github"
+    <a class="hidden-xs github-corner" href="https://github.com/niallobrien/stylus-ui" title="Stylus-UI on Github"
        target="blank">
       <svg width="80" height="80" viewBox="0 0 250 250" class="github-corner">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -278,52 +253,25 @@
   <header class="header" id="home">
     <section class="container padding-top--none padding-bottom">
       <h1 class="title">Stylus-UI</h1>
-      <p class="description">A minimalist CSS framework for Stylus</p>
-      <a class="button" href="#getting-started">Getting Started</a>
+      <p class="description">A minimalist Stylus boilerplate</p>
+      <a class="button" href="#get-started">Get Started</a>
     </section>
   </header>
 
   <section class="container" id="why">
-    <h5 class="title">Why it's awesome?</h5>
-    <p>Stylus-UI provides a minimal setup of styles for a fast and clean starting point. <strong>Only 2kb
-      gzipped!</strong> Specially designed for better performance and higher productivity
-      with fewer properties to reset resulting in cleaner code. Hope you enjoy!</p>
-    <p>Do you want to star it, tweet it, or share it with anyone? So do it! This means a lot to me ♥</p>
-    <div class="share">
-      <ul class="share-list">
-        <li class="share-item"><a href="https://github.com/niallobrien/stylus-ui" title="Share Stylus-UI on Github"
-                                  target="blank"><i class="icon fa fa-github share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/niallobrien/stylus-ui"
-                                  title="Share Stylus-UI on Facebook" target="blank"><i
-          class="icon fa fa-facebook share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://twitter.com/intent/tweet?text=Stylus-UI %7C A minimalist Stylus framework&amp;url=#"
-                                  title="Share Stylus-UI on Twitter" target="blank"><i
-          class="icon fa fa-twitter share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://plus.google.com/share?url=https://github.com/niallobrien/stylus-ui"
-                                  title="Share stylus-ui on Google+" target="blank"><i
-          class="icon fa fa-google-plus share-icon"></i></a></li>
-        <li class="share-item only-mobile"><a
-          href="whatsapp://send?text=stylus-ui %7C A minimalist CSS framework https://github.com/niallobrien/stylus-ui"
-          title="Share stylus-ui on Whatsapp" target="blank"><i class="icon fa fa-whatsapp share-icon"></i></a></li>
-        <li class="share-item"><a class="share-dialog"
-                                  href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://github.com/niallobrien/stylus-ui&amp;title=Stylus-UI | A minimalist Stylus framework"
-                                  title="Share stylus-ui on LinkedIn" target="blank"><i
-          class="icon fa fa-linkedin share-icon"></i></a></li>
-      </ul>
-    </div>
+    <h5 class="title">Why use Stylus-UI</h5>
+    <p>Stylus-UI provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity
+      with fewer properties to reset resulting in cleaner code. No framework, just a solid starting point using some conventions we've established over the years at <a href="http://clock.co.uk" target="_blank">Clock</a>.</p>
   </section>
 
-  <section class="container" id="getting-started">
+  <section class="container" id="get-started">
     <h5 class="title">Getting Started</h5>
     <p>Stylus-UI provides minimal styles for you to get started with your project and so to ensure that you are never
-      fighting the framework trying to customise it or override styles,
+      fighting the boilerplate trying to customise it or override styles,
       we recommend that you download the .zip file and place the extracted files in your project.
     </p>
     <p>For compilation we've included a <code>gulpfile.js</code> which compiles
-      <code>assets/styles/stylus-ui.styl</code> by default and outputs the compiled assets to <code>public/assets/main.styl</code>.
+      <code>assets/styles/stylus-ui.styl</code> by default and outputs the compiled assets to <code>public/assets/main.css</code> and <code>public/assets/main.min.css</code>.
       You should add a CSS Reset in the header of your project (normalize is a good choice, see the example below), then
       add the Stylus-UI compiled stylesheet after the CSS Reset. Once downloaded and placed within your project, please
       follow the instructions below.</p>
@@ -370,7 +318,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       certain CSS elements easier.
       The mixins you're most likely to use the most are <code>rem()</code> and the media query mixins.
     </p>
-    <h5 class="title">REM</h5>
+    <strong>REM</strong>
     <p>Instead of working with <code>px</code> values, simply pass the pixel value to the rem mixin. We set the <code>$base--font-size</code>
       in <code>settings.styl</code> and apply it the the <code>html</code> element in
       <code>foundations/_base.styl</code>.
@@ -382,16 +330,17 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   font-size rem(12)</span></code></pre>
     </div>
 
-    <h5 class="title">Media Queries</h5>
+    <strong>Media Queries</strong>
     <p>
       Stylus-UI takes a mobile first approach to responsive design, so should you need to adjust styles for tablet or
-      desktop, you will need to use media queries.
+      desktop, you will need to use The Media Query Grid.
       Fortunately we've made this considerably easier for you. The settings for media queries and breakpoints reside in
-      <code>settings.styl</code>, we highly encourage you to modify this file to suit your own project.
-    </p>
+      <code>settings.styl</code>, and the grid is constructed in <code>_grid.styl</code>.
+      We highly encourage you to modify these files to suit your own project.
+      </p>
     <div class="example">
 <pre class="code prettyprint"><code class="code-content"><span class="com">.navigation-item
-  $color--primary
+  color $color--primary
   font-size rem(12)
 
   // adjust the font size for tablet up
@@ -416,13 +365,30 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       smaller sizes.
       The max width can be changed by adjusting the <code>$base--max-width</code> variable in <code>foundations/_settings.styl</code>
       and all columns will resize accordingly.
-      Stylus-UI is different than most because of its use of the <strong>CSS Flexible Box Layout Module
-        standard</strong>.
-      Simply add columns you want in a row, and they'll evenly take up
+      The grid utilises Flexbox and takes a mobile-first approach. Simply add columns you want in a row, and they'll evenly take up
       the available space. If you want three columns, add three columns, if you want five columns, add five
       columns.
       There is no restriction on number of columns, but we advise you to use your common sense.
       We follow <a href="http://getbem.com/introduction/">BEM conventions</a> for column modifiers as shown below.
+    </p>
+          <p>
+        Please note, that since the grid takes a mobile first approach, each breakpoint inherits from the previous
+        breakpoint. For example, if you modify the grid size at a specific breakpoint, all larger breakpoints will
+        inherit this modification. So if you modify the grid for tablet, think of it as modifying the grid for
+        tablet and up.
+      </p>
+      <p>
+        <code>
+          // Mobile will span 100%. Tablet and desktop (and any larger breakpoints) will span 50%.
+          <br>
+          column column--50-tablet
+        </code>
+      </p>
+    <p>
+      If you intend to target a specific breakpoint and modify its grid only, simply append <code>-only</code> to your
+      grid modifier. For example, if we wanted all sections to span 100% of the screen, but only tablet should span
+      50%, our classes would look like <code>column column--50-tablet-only</code>. Now mobile and desktop would span
+      100%, but tablet would only span 50%.
     </p>
     <div class="example">
       <div class="padding-top--none">
@@ -475,6 +441,20 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
         </div>
       </div>
     </div>
+
+    <div class="example">
+      <h5 class="title">Media Query Grid</h5>
+      <div class="row">
+        <div class="column column--50-tablet"><span class="column--demo">.column.column--50-tablet</span></div>
+      </div>
+      <div class="row">
+        <div class="column column--50-tablet-only"><span class="column--demo">.column.column--50-tablet-only</span></div>
+      </div>
+      <div class="row">
+        <div class="column column--75-mobile-only column--50-tablet"><span class="column--demo">.column.column--75-mobile-only.column--50-tablet</span></div>
+      </div>
+    </div>
+
   </section>
 
   <section class="container" id="typography">
@@ -552,25 +532,18 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       <input class="button button--outline" type="button" value="button input">
     </div>
 
-    <pre class="code prettyprint"><code><span class="com">&lt;!-- Default Button --&gt;</span><span class="pln">
-</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">href</span><span
-      class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span
-      class="pln">Default Button</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+<pre class="code prettyprint"><code class="code-content"><span class="com">&lt;!-- Standard buttons --&gt;</span><span class="pln">
+</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Anchor button</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+</span><span class="tag">&lt;button&gt;</span><span class="pln">Button element</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"submit input"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"button input"</span><span class="tag">&gt;</span><span class="pln">
 
-</span><span class="com">&lt;!-- Outlined Button --&gt;</span><span class="pln">
-</span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button button--outline"</span><span class="tag">&gt;</span><span
-      class="pln">Outlined Button</span><span class="tag">&lt;/button&gt;</span><span class="pln">
-
-</span><span class="com">&lt;!-- Clear Button --&gt;</span><span class="pln">
-</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button button--clear"</span><span class="pln"> </span><span class="atn">type</span><span
-      class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span
-      class="pun">=</span><span class="atv">"Clear Button"</span><span class="tag">&gt;</span><span class="pln">
-
-</span><span
-      class="com">&lt;!-- Please note that modifiers are used to alter the default appearance of a .button --&gt;</span></code></pre>
+</span><span class="com">&lt;!-- Primary buttons --&gt;</span><span class="pln">
+</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button button--outline"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Anchor button</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+</span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button--outline"</span><span class="tag">&gt;</span><span class="pln">Button element</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button--outline"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"submit input"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button--outline"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"button input"</span><span class="tag">&gt;</span></code>
+</pre>
   </section>
 
   <section class="container" id="forms">
@@ -600,9 +573,9 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
         <fieldset>
           <label for="messageField">Message</label>
           <textarea placeholder="Please type your message..." id="messageField"></textarea>
-          <div class="example-send-yourself-copy float-right">
+          <div class="example-send-yourself-copy">
             <input type="checkbox" id="confirmField">
-            <label class="label-inline float-right" for="confirmField">Send a copy to yourself</label>
+            <label class="label--inline" for="confirmField">Send a copy to yourself</label>
           </div>
           <input class="float-left" type="submit" value="Send">
         </fieldset>
@@ -639,8 +612,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       class="tag">&gt;</span><span class="pln">Send a copy to yourself</span><span
       class="tag">&lt;/label&gt;</span><span class="pln">
     </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">class</span><span
-      class="pun">=</span><span class="atv">"button-primary"</span><span class="pln"> </span><span
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span
       class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span
       class="atn">value</span><span class="pun">=</span><span class="atv">"Send"</span><span
       class="tag">&gt;</span><span class="pln">
@@ -817,22 +789,6 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
 </span><span class="tag">&lt;/table&gt;</span><span class="pln">
   </span></code></pre>
-  </section>
-
-  <section class="container" id="codes">
-    <h5 class="title">Codes</h5>
-    <p>The Code element represents a fragment of computer code. Just wrap anything in a <code>
-      &lt;code&gt;</code> and it
-      will appear like this. if you need a block, by default, enter the <code>&lt;code&gt;</code> within the
-      <code>&lt;pre&gt;</code>
-      element.</p>
-    <div class="example">
-<pre><code>.navigation-item
-  color $color--blue
-</code></pre>
-    </div>
-    <pre class="code prettyprint lang-html"><code class="code-content"><span class="com">.navigation-item
-  color $color--blue</span></code></pre>
   </section>
 
   <section class="container" id="utilities">
