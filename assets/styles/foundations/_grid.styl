@@ -2,69 +2,21 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 
-column(breakpoint, sizes)
-  // Explicit Column Percent Sizes
-  // By default each grid column will evenly distribute
-  // across the grid. However, you can specify individual
-  // columns to take up a certain size of the available area
-  if breakpoint == 'desktop'
-    +width-min($mq--desktop)
-      .testing
-        color red
-      for size in sizes
-        .row .column.column--{size}-desktop
-          if size == 34
-            size = 33
-          else if size == 67
-            size = 66
-          else
-            flex 0 0 (size)%
-            max-width (size)%
+column($namespace, $sizes)
+  _column-output($sizes, $namespace)
 
-  else if breakpoint == 'tablet'
-    for size in sizes
-      +width-range($mq--tablet, $mq--desktop)
-        .row .column.column--{size}-tablet
-          if size == 34
-            size = 33
-          else if size == 67
-            size = 66
-          else
-            flex 0 0 (size)%
-            max-width (size)%
 
-  else if breakpoint == 'mobile'
-    for size in sizes
-      +width-max($mq--tablet - 1)
-        .row .column.column--{size}-mobile
-          if size == 34
-            size = 33
-          else if size == 67
-            size = 66
-          else
-            flex 0 0 (size)%
-            max-width (size)%
+_column-output($sizes, $namespace = false)
+  $namespaceModifier = $namespace ? '-' + $namespace : ''
 
-  else
-    for size in sizes
-      .row .column.column--{size}
-        if size == 34
-          size = 33
-        else if size == 67
-          size = 66
-        else
-          flex 0 0 (size)%
-          max-width (size)%
+  for $size in $sizes
+    .row .column.column--{$size}{$namespaceModifier}
+      if $size == 34 || $size == 67
+        $size = ($size - 1)
 
-// Can't pass the size in the for loop above into this mixin for some reason
-//column-outout(size)
-//  if size == 34
-//    size = 33
-//  else if size == 67
-//    size = 66
-//  else
-//    flex 0 0 (size)%
-//    max-width (size)%
+      flex 0 0 ($size)%
+      max-width ($size)%
+
 
 // .container is main centered wrapper with a max width of 1120rem (1120px)
 .container
@@ -251,6 +203,18 @@ column(breakpoint, sizes)
         padding-right 0
 
 column('', $column-sizes)
-column('mobile', $column-sizes)
-column('tablet', $column-sizes--tablet)
-column('desktop', $column-sizes)
+
++width-max($mq--tablet - 1)
+  column('mobile-only', $column-sizes)
+
++width-min($mq--tablet)
+  column('tablet', $column-sizes)
+
++width-range($mq--tablet, $mq--desktop)
+  column('tablet-only', $column-sizes)
+
++width-min($mq--desktop)
+  column('desktop', $column-sizes)
+
+@media print
+  column('', $column-sizes)

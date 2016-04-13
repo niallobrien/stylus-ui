@@ -333,9 +333,27 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
     <strong>Media Queries</strong>
     <p>
       Stylus-UI takes a mobile first approach to responsive design, so should you need to adjust styles for tablet or
-      desktop, you will need to use media queries.
+      desktop, you will need to use The Media Query Grid.
       Fortunately we've made this considerably easier for you. The settings for media queries and breakpoints reside in
-      <code>settings.styl</code>, we highly encourage you to modify this file to suit your own project.
+      <code>settings.styl</code>, and the grid is constructed in <code>_grid.styl</code> (see the bottom of the file.
+      We highly encourage you to modify these files to suit your own project.
+      </p>
+      <p>
+        Please note, that since the grid takes a mobile first approach, each breakpoint inherits from the previous
+        breakpoint. For example, if you modify the grid size at a specific breakpoint, all larger breakpoints will
+        inherit this modification. So if you modify the grid for tablet, think of it as modifying the grid for
+        tablet and up.
+      </p>
+      <p>
+        <code>
+          // Mobile will span 100%. Tablet and desktop (and any larger breakpoints) will span 50%.
+          column column--25-tablet
+        </code>
+      </p>
+      If you intend to target a specific breakpoint and modify its grid only, simply append <code>-only</code> to your
+      grid modifier. For example, if we wanted all sections to span 100% of the screen, but only tablet should span
+      50%, our classes would look like <code>column column--50-tablet-only</code>. Now mobile and desktop would span
+      100%, but tablet would only span 50%.
     </p>
     <div class="example">
 <pre class="code prettyprint"><code class="code-content"><span class="com">.navigation-item
@@ -364,7 +382,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       smaller sizes.
       The max width can be changed by adjusting the <code>$base--max-width</code> variable in <code>foundations/_settings.styl</code>
       and all columns will resize accordingly.
-      The grid utilises Flexbox. Simply add columns you want in a row, and they'll evenly take up
+      The grid utilises Flexbox and takes a mobile-first approach. Simply add columns you want in a row, and they'll evenly take up
       the available space. If you want three columns, add three columns, if you want five columns, add five
       columns.
       There is no restriction on number of columns, but we advise you to use your common sense.

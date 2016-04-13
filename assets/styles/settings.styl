@@ -89,7 +89,10 @@ $content--gutter--mobile = ($base--spacing / 2)
 // 5. GRID
 //
 $column-sizes = 10 20 25 30 33 34 40 50 60 66 67 75 80 90
-$column-sizes--tablet = 25 50
+// if you want to reduce the css output, you can limit the sizes of grid variants required
+// $column-sizes--tablet = 25 50
+// Then pass $column-sizes--tablet to the grid mixin in _grid.styl like so
+// column('tablet', $column-sizes--tablet)
 
 $grid--gutter = $base--spacing * .5
 
