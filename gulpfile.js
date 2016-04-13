@@ -18,24 +18,24 @@ gulp.task('default', ['build', 'watch'])
 gulp.task('build', ['clean', 'styles'])
 
 gulp.task('clean', function () {
-    return gulp.src('public/styles/**.*', {read: false})
-      .pipe(clean())
+  return gulp.src('public/styles/**.*', {read: false})
+    .pipe(clean())
 })
 
-gulp.task('watch', function() {
-    gulp.watch('assets/styles/**/*.styl', ['build'])
+gulp.task('watch', function () {
+  gulp.watch('assets/styles/**/*.styl', ['build'])
 })
 
-gulp.task('styles', function() {
-	gulp.src('assets/styles/stylus-ui.styl')
-  .pipe(plumber())
-  .pipe(stylus({ paths:  ['node_modules'] }))
-  .pipe(autoprefixer('last 1 version'))
-  .pipe(rename('main.css'))
-  .pipe(gulp.dest('./public/styles/'))
-  .pipe(cssnano())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('./public/styles/'))
-  .pipe(size())
-  .pipe(notify('Stylus compilation complete.'))
+gulp.task('styles', function () {
+  gulp.src('assets/styles/stylus-ui.styl')
+    .pipe(plumber())
+    .pipe(stylus({paths: ['node_modules']}))
+    .pipe(autoprefixer('last 1 version'))
+    .pipe(rename('main.css'))
+    .pipe(gulp.dest('./public/styles/'))
+    .pipe(cssnano())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./public/styles/'))
+    .pipe(size())
+    .pipe(notify('Stylus compilation complete.'))
 })
