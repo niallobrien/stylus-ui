@@ -3,6 +3,13 @@
 // ========
 // Project specific settings which can be changed to modify the basic look and
 // feel of the project with little effort.
+// ?= is used for variable assignment so that we can override & customise these settings.
+// When using ?=, the second assignment attempt fails (since the variable is already defined):
+// color = white
+// color ?= black
+//
+// color
+// => white
 //
 // 1. BREAKPOINTS AND MEDIA QUERIES
 // 2. COLOURS
@@ -18,42 +25,56 @@
 // Setup standard widths to pass to media queries
 //
 
-$mq--mobile--portrait  = 300px
-$mq--mobile--landscape = 500px
-$mq--tablet--portrait  = 650px
-$mq--tablet--landscape = 800px
-$mq--desktop--small    = 960px
-$mq--desktop--medium   = 1280px
-$mq--desktop--large    = 1600px
+$mq--mobile--portrait ?= 300px
+$mq--mobile--landscape ?= 500px
+$mq--tablet--portrait ?= 650px
+$mq--tablet--landscape ?= 800px
+$mq--desktop--small ?= 960px
+$mq--desktop--medium ?= 1280px
+$mq--desktop--large ?= 1600px
 
 // Common aliases
-$mq--mobile  = $mq--mobile--portrait
-$mq--tablet  = $mq--tablet--portrait
-$mq--desktop = $mq--desktop--small
+$mq--mobile ?= $mq--mobile--portrait
+$mq--tablet ?= $mq--tablet--portrait
+$mq--desktop ?= $mq--desktop--small
 
 
 //
 // 2. COLOURS
 //
 
-$color--initial = $color--white
-$color--primary = $color--blue
-$color--secondary = #1eaedb
-$color--tertiary = #f4f5f6
-$color--quaternary = #d1d1d1
+$color--initial ?= $color--white
+$color--primary ?= $color--blue
+$color--secondary ?= #1eaedb
+$color--tertiary ?= #f4f5f6
+$color--quaternary ?= #d1d1d1
 
 // Common Project Colours
-$color--blue  = #33c3f0
-$color--black = #222
-$color--grey  = #ccc
-$color--grey-alt = #606C76
-$color--white = #fff
+$color--aqua ?= #7FDBFF
+$color--blue ?= #0074D9
+$color--navy ?= #001F3F
+$color--teal ?= #39CCCC
+$color--green ?= #2ECC40
+$color--olive ?= #3D9970
+$color--lime ?= #01FF70
+
+$color--yellow ?= #FFDC00
+$color--orange ?= #FF851B
+$color--red ?= #FF4136
+$color--fuchsia ?= #F012BE
+$color--purple ?= #B10DC9
+$color--maroon ?= #85144B
+
+$color--white ?= #FFFFFF
+$color--silver ?= #DDDDDD
+$color--gray ?= #AAAAAA
+$color--black ?= #111111
 
 // Default Notification Colours
-$color--success = #47a967
-$color--notice  = #4791a9
-$color--warning = #dc7f2a
-$color--error   = #ca4427
+$color--success ?= #47a967
+$color--notice ?= #4791a9
+$color--warning ?= #dc7f2a
+$color--error ?= #ca4427
 
 
 //
@@ -61,40 +82,40 @@ $color--error   = #ca4427
 // Amend variable names to suit fonts used.
 //
 
-$font--arial   = Arial, Helvetica, sans-serif
-$font--georgia = Georgia, serif
-$font--roboto = 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
-$font--gotham-a = 'Gotham Rounded A', Arial, Helvetica, sans-serif
-$font--gotham-b = 'Gotham Rounded B', Arial, Helvetica, sans-serif
+$font--arial ?= Arial, Helvetica, sans-serif
+$font--georgia ?= Georgia, serif
+$font--roboto ?= 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font--gotham-a ?= 'Gotham Rounded A', Arial, Helvetica, sans-serif
+$font--gotham-b ?= 'Gotham Rounded B', Arial, Helvetica, sans-serif
 
 
 //
 // 4. BASE STYLES
 //
 
-$base--font-heading = $font--gotham-a
-$base--font-body    = $font--gotham-b
-$base--font-color   = $color--black
-$base--font-size    = 16px
-$base--line-height  = 1.6
-$base--spacing      = rem(20)
-$base--body-bg      = $color--white
-$base--max-width    = rem(1280)
+$base--font-heading ?= $font--gotham-a
+$base--font-body ?= $font--gotham-b
+$base--font-color ?= $color--black
+$base--font-size ?= 16px
+$base--line-height ?= 1.6
+$base--spacing ?= rem(20)
+$base--body-bg ?= $color--white
+$base--max-width ?= rem(1280)
 
-$content--gutter = $base--spacing
-$content--gutter--mobile = ($base--spacing / 2)
+$content--gutter ?= $base--spacing
+$content--gutter--mobile ?= ($base--spacing / 2)
 
 
 //
 // 5. GRID
 //
-$column-sizes = 10 20 25 30 33 34 40 50 60 66 67 75 80 90
+$column-sizes ?= 10 20 25 30 33 34 40 50 60 66 67 75 80 90
 // if you want to reduce the css output, you can limit the sizes of grid variants required
-// $column-sizes--tablet = 25 50
+// $column-sizes--tablet ?= 25 50
 // Then pass $column-sizes--tablet to the grid mixin in _grid.styl like so
 // column('tablet', $column-sizes--tablet)
 
-$grid--gutter = $base--spacing * .5
+$grid--gutter ?= $base--spacing * .5
 
 
 //
@@ -105,5 +126,40 @@ $grid--gutter = $base--spacing * .5
 // * all: Show error and warning bugs, as well as general tips / minor bugs
 //
 
-$debug--mode = false
-$debug--level = 'all'
+$debug--mode ?= false
+$debug--level ?= 'all'
+
+
+//
+// 7. FUNCTIONAL UTILITIES
+//
+$base--bold-font-weight ?= 700
+$base--caps-letter-spacing ?= .2em
+
+$base--line-height-1 ?= 1
+$base--line-height-2 ?= 1.125
+$base--line-height-3 ?= 1.25
+$base--line-height-4 ?= 1.5
+
+$base--width-1 ?= $base--spacing * 15
+$base--width-2 ?= $base--spacing * 20
+$base--width-3 ?= $base--spacing * 30
+$base--width-4 ?= $base--spacing * 40
+
+$base--z1 ?= 1
+$base--z2 ?= 2
+$base--z3 ?= 3
+$base--z4 ?= 4
+
+$base--border-width ?= 1px
+$base--border-radius ?= 3px
+
+$base--darken-1 ?= rgba(0, 0, 0, .0625)
+$base--darken-2 ?= rgba(0, 0, 0, .125)
+$base--darken-3 ?= rgba(0, 0, 0, .25)
+$base--darken-4 ?= rgba(0, 0, 0, .5)
+
+$base--lighten-1 ?= rgba(255, 255, 255, .0625)
+$base--lighten-2 ?= rgba(255, 255, 255, .125)
+$base--lighten-3 ?= rgba(255, 255, 255, .25)
+$base--lighten-4 ?= rgba(255, 255, 255, .5)
