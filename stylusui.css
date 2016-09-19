@@ -1163,26 +1163,26 @@ h6 {
 .align-bottom {
   vertical-align: bottom;
 }
-.p0 {
+.m0 {
   margin: 0;
 }
-.pt0 {
+.mt0 {
   margin-top: 0;
 }
-.pr0 {
+.mr0 {
   margin-right: 0;
 }
-.pb0 {
+.mb0 {
   margin-bottom: 0;
 }
-.pl0 {
+.ml0 {
   margin-left: 0;
 }
-.px0 {
+.mx0 {
   margin-left: 0;
   margin-right: 0;
 }
-.py0 {
+.my0 {
   margin-top: 0;
   margin-bottom: 0;
 }
