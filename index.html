@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../public/styles/main.css">
+  <link rel="stylesheet" href="http://niallobrien.github.io/stylus-ui/stylusui.css">
   <style type="text/css">
     /* Base */
     img {
@@ -358,6 +358,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
     </div>
 
   </section>
+
 
   <section class="container" id="grid">
     <h5 class="title">The Grid</h5>
@@ -793,44 +794,201 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
 
   <section class="container" id="utilities">
     <h5 class="title">Utilities</h5>
-    <p>Stylus-UI has some functional classes to improve the performance and productivity everyday.</p>
-			<pre class="code prettyprint lang-html prettyprinted"><code class="code-content"><span class="com">&lt;!-- Clear Floats  --&gt;</span><span class="pln">
-</span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+    <p>Stylus-UI has some functional classes to improve the prototype productivity.</p>
 
-  </span><span class="com">&lt;!-- Float --&gt;</span><span class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"float-left"</span><span class="tag">&gt;&lt;/div&gt;</span><span
-        class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"float-right"</span><span class="tag">&gt;&lt;/div&gt;</span><span
-        class="pln">
+    <h5>Typography</h5>
+    <pre class="code prettyprint prettyprinted">
+.font-family-inherit
+.font-size-inherit
+.text-decoration-none
+.bold
+.regular
+.italic
+.caps
+.left-align
+.center
+.right-align
+.justify
+.nowrap
+.break-word
+.line-height-default
+.line-height-1
+.line-height-2
+.line-height-3
+.line-height-4
+.list-style-none
+.underline
+.truncate
+.list-reset
+    </pre>
+<h5>Layout</h5>
+<pre>
+.inline
+.block
+.inline-block
+.table
+.table-cell
+.overflow-hidden
+.overflow-scroll
+.overflow-auto
+.clearfix
+.left
+.right
+.fit
+.max-width-1
+.max-width-2
+.max-width-3
+.max-width-4
+.border-box
+</pre>
+<h5>Align</h5>
+<pre>
+.align-baseline
+.align-top
+.align-middle
+.align-bottom
+</pre>
+<h5>Margin & Padding</h5>
+<p>m = margin, p = padding. t = top, r = right, b = bottom, l = left, x = horizontal, y = vertical. 0 - 4 = smallest - largest.</p>
+<pre>
+.m0
+.mt0
+.mr0
+.mb0
+.ml0
+.mx0
+.my0
 
-  </span><span class="com">&lt;!-- Align Text --&gt;</span><span class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"text-left"</span><span class="tag">&gt;&lt;/div&gt;</span><span
-        class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"text-right"</span><span class="tag">&gt;&lt;/div&gt;</span><span
-        class="pln">
+.m1
+.mt1
+.mr1
+.mb1
+.ml1
+.my1
+.mx1
+etc.
+etc.
+.my4
+.mx4
+</pre>
+<pre>
+.p0
+.pt0
+.pr0
+.pb0
+.pl0
+.px0
+.py0
 
-  </span><span class="com">&lt;!-- Add Padding --&gt;</span><span class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"padding-top"</span><span class="tag">&gt;&lt;/div&gt;</span><span
-        class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"padding-bottom"</span><span
-        class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+.p1
+.pt1
+.pr1
+.pb1
+.pl1
+.py1
+.px1
+etc.
+etc.
+.py4
+.px4
+</pre>
+<h5>Borders</h5>
+<pre>
+.border
+.border-top
+.border-right
+.border-bottom
+.border-left
+.border-none
 
-  </span><span class="com">&lt;!-- Remove Padding --&gt;</span><span class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"padding-top--none"</span><span class="tag">&gt;&lt;/div&gt;</span><span
-        class="pln">
-  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span
-        class="pun">=</span><span class="atv">"padding-bottom--none"</span><span
-        class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+.rounded
+.circle
+.rounded-top
+.rounded-right
+.rounded-bottom
+.rounded-left
+.not-rounded
+</pre>
+<h5>Position</h5>
+<pre>
+.relative
+.absolute
+.fixed
 
-</span><span class="tag">&lt;/div&gt;</span></code></pre>
+.top-0
+.right-0
+.bottom-0
+.left-0
+
+.z1
+.z2
+.z3
+.z4
+</pre>
+<h5>Hide</h5>
+<p>Mobile first, breakpoints assume screen-size and up much like the grid. Eg. .hide-tablet = .hide-tablet-and-up.
+<pre>
+.hide
+.hide-mobile-only
+.hide-tablet
+.hide-tablet-only
+.hide-desktop
+.display-none
+</pre>
+<h5>Colors</h5>
+<p>For background colors, prefix with 'bg-', eg. .bg-red.</p>
+<p>For border colors, prefix with 'border-', eg. .border-red. Ensure you add .border first.</p>
+<pre>
+.black
+.gray
+.silver
+.white
+
+.aqua
+.blue
+.navy
+.teal
+.green
+.olive
+.lime
+
+.yellow
+.orange
+.red
+.fuchsia
+.purple
+.maroon
+
+.color-inherit
+.muted
+</pre>
+<h5>Darken / Lighten</h5>
+<pre>
+.bg-darken-1
+.bg-darken-2
+.bg-darken-3
+.bg-darken-4
+
+.bg-lighten-1
+.bg-lighten-2
+.bg-lighten-3
+.bg-lighten-4
+</pre>
+<h5>Background Images</h5>
+<pre>
+.bg-cover
+.bg-contain
+
+.bg-center
+.bg-top
+.bg-right
+.bg-bottom
+.bg-left
+
+.bg-no-repeat
+.bg-repeat-x
+.bg-repeat-y
+</pre>
   </section>
 
     <section class="container" id="browser-support">
