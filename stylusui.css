@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
 }
 blockquote {
-  border-left: 0.188rem solid #d1d1d1;
+  border-left: 0.188rem solid #f5f5f5;
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
@@ -58,8 +58,8 @@ button:focus,
 input[type='button']:focus,
 input[type='reset']:focus,
 input[type='submit']:focus {
-  background-color: #1eaedb;
-  border-color: #1eaedb;
+  background-color: #1981dc;
+  border-color: #1981dc;
   color: #fff;
   outline: 0;
 }
@@ -68,14 +68,14 @@ button.button--small,
 input[type='button'].button--small,
 input[type='reset'].button--small,
 input[type='submit'].button--small {
-  padding: 0 1.25rem;
+  padding: 0 0.625rem;
 }
 .button.button--large,
 button.button--large,
 input[type='button'].button--large,
 input[type='reset'].button--large,
 input[type='submit'].button--large {
-  padding: 0 3.75rem;
+  padding: 0.625rem 3.75rem;
 }
 .button.button--outline,
 button.button--outline,
@@ -95,9 +95,9 @@ button.button--outline:focus,
 input[type='button'].button--outline:focus,
 input[type='reset'].button--outline:focus,
 input[type='submit'].button--outline:focus {
-  color: #1eaedb;
+  color: #1981dc;
   background-color: transparent;
-  border-color: #1eaedb;
+  border-color: #1981dc;
 }
 .button.button--clear,
 button.button--clear,
@@ -118,17 +118,17 @@ button.button--clear:focus,
 input[type='button'].button--clear:focus,
 input[type='reset'].button--clear:focus,
 input[type='submit'].button--clear:focus {
-  color: #1eaedb;
+  color: #1981dc;
   background-color: transparent;
   border-color: transparent;
 }
 pre {
-  background: #f4f5f6;
+  background: #ddd;
   border-left: 0.188rem solid #0074d9;
   font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace;
 }
 code {
-  background: #f4f5f6;
+  background: #ddd;
   border-radius: 0.4rem;
   font-size: 86%;
   padding: 0.125rem 0.313rem;
@@ -153,7 +153,7 @@ input[type='url'],
 textarea,
 select {
   background-color: transparent;
-  border: 0.063rem solid #d1d1d1;
+  border: 0.063rem solid #f5f5f5;
   border-radius: 0.25rem;
   box-shadow: none;
   box-sizing: border-box;
@@ -893,7 +893,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #1eaedb;
+  color: #1981dc;
 }
 dl,
 ol,
@@ -928,7 +928,7 @@ li {
   margin-bottom: 1rem;
 }
 hr {
-  border-top: 0.1rem solid #f4f5f6;
+  border-top: 0.1rem solid #ddd;
   border-width: 0;
   margin-bottom: 3.5rem;
   margin-top: 3rem;
