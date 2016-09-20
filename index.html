@@ -259,13 +259,13 @@
   </header>
 
   <section class="container" id="why">
-    <h5 class="title">Why use Stylus-UI</h5>
+    <h2 class="title">Why use Stylus-UI</h2>
     <p>Stylus-UI provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity
-      with fewer properties to reset resulting in cleaner code. No framework, just a solid starting point using some conventions we've established over the years at <a href="http://clock.co.uk" target="_blank">Clock</a>.</p>
+      with fewer properties to reset resulting in cleaner code. No framework, just a solid starting point using some conventions & functional classes we've established over the years at <a href="http://clock.co.uk" target="_blank">Clock</a>.</p>
   </section>
 
   <section class="container" id="get-started">
-    <h5 class="title">Getting Started</h5>
+    <h2 class="title">Getting Started</h2>
     <p>Stylus-UI provides minimal styles for you to get started with your project and so to ensure that you are never
       fighting the boilerplate trying to customise it or override styles,
       we recommend that you download the .zip file and place the extracted files in your project.
@@ -313,7 +313,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="mixins">
-    <h5 class="title">Mixins</h5>
+    <h2 class="title">Mixins</h2>
     <p>Stylus-UI uses <a href="https://github.com/jackbrewer/stylus-mixins">Stylus-Mixins</a> to make working with
       certain CSS elements easier.
       The mixins you're most likely to use the most are <code>rem()</code> and the media query mixins.
@@ -361,7 +361,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
 
 
   <section class="container" id="grid">
-    <h5 class="title">The Grid</h5>
+    <h2 class="title">The Grid</h2>
     <p>The Grid is a fluid system with a max width of <code>1280px</code> that shrinks with the browser/device at
       smaller sizes.
       The max width can be changed by adjusting the <code>$base--max-width</code> variable in <code>foundations/_settings.styl</code>
@@ -408,7 +408,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       </div>
     </div>
     <div class="example">
-      <h5 class="title">Nested Grids</h5>
+      <h2 class="title">Nested Grids</h2>
       <div class="row">
         <div class="column">
           <span class="column--demo">.column</span>
@@ -444,7 +444,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
     </div>
 
     <div class="example">
-      <h5 class="title">Media Query Grid</h5>
+      <h2 class="title">Media Query Grid</h2>
       <div class="row">
         <div class="column column--50-tablet"><span class="column--demo">.column.column--50-tablet</span></div>
       </div>
@@ -459,7 +459,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="typography">
-    <h5 class="title">Typography</h5>
+    <h2 class="title">Typography</h2>
     <p>CSS3 introduces a few new units, including the <code>rem</code> unit, which stands for <em>"root em"</em>. The
       <code>rem</code> unit is relative to the font-size of the root element <code>&lt;html&gt;</code>. That means that
       we can define a single font size on the root element, and define all <code>rem</code> units to be a percentage of
@@ -515,7 +515,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="buttons">
-    <h5 class="title">Buttons</h5>
+    <h2 class="title">Buttons</h2>
     <p>The Button, an essential part of any user experience. Buttons come in three basic styles in stylus-ui: The <code>
       &lt;button&gt;</code> element has flat color by default, whereas <code>.button--outline</code> has a simple
       outline around, and <code>.button--clear</code> is entirely clear.</p>
@@ -531,6 +531,11 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
       <button class="button button--outline">Button element</button>
       <input class="button button--outline" type="submit" value="submit input">
       <input class="button button--outline" type="button" value="button input">
+
+      <!-- Sized buttons -->
+      <a class="button button--small" href="#">Small button</a>
+      <a class="button" href="#">Regular button</a>
+      <a class="button button--large" href="#">Small button</a>
     </div>
 
 <pre class="code prettyprint"><code class="code-content"><span class="com">&lt;!-- Standard buttons --&gt;</span><span class="pln">
@@ -548,7 +553,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="forms">
-    <h5 class="title">Forms</h5>
+    <h2 class="title">Forms</h2>
     <p>The Form has never been exactly fun, and it can be downright painful on a mobile device with its on-screen
       keyboard. stylus-ui help to make this much easier with design focused on the user experience.</p>
     <div class="example">
@@ -625,7 +630,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="lists">
-    <h5 class="title">Lists</h5>
+    <h2 class="title">Lists</h2>
     <p>The List is a very versatile and common way to display items. stylus-ui has three types of lists: The unordered
       list use <code>&lt;ul&gt;</code> element will be marked with a outline circles, the ordered list use <code>&lt;ol&gt;</code>
       element and your items will be marked with numbers, the description list use <code>&lt;dl&gt;</code> element and
@@ -689,7 +694,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="code">
-    <h5 class="title">Code</h5>
+    <h2 class="title">Code</h2>
     <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like
       <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
     <div class="example">
@@ -705,7 +710,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="blockquotes">
-    <h5 class="title">Blockquotes</h5>
+    <h2 class="title">Blockquotes</h2>
     <p>The Blockquote represents a section that is quoted from another source.</p>
     <div class="example">
       <blockquote>
@@ -721,7 +726,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="tables">
-    <h5 class="title">Tables</h5>
+    <h2 class="title">Tables</h2>
     <p>The Table element represents data in two dimensions or more. We encourage the use of proper formatting with
       <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> to create a <code>&lt;table&gt;</code>. The code
       becomes
@@ -793,10 +798,10 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
   </section>
 
   <section class="container" id="utilities">
-    <h5 class="title">Utilities</h5>
+    <h2 class="title">Utilities</h2>
     <p>Stylus-UI has some functional classes to improve the prototype productivity.</p>
 
-<h5>Typography</h5>
+<h3>Typography</h3>
 <pre>
 .font-family-inherit
 .font-size-inherit
@@ -821,7 +826,7 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
 .truncate
 .list-reset
 </pre>
-<h5>Layout</h5>
+<h3>Layout</h3>
 <pre>
 .inline
 .block
@@ -841,14 +846,14 @@ npm i --save-dev gulp-stylus gulp-sourcemaps gulp-autoprefixer gulp-cssnano gulp
 .max-width-4
 .border-box
 </pre>
-<h5>Align</h5>
+<h3>Align</h3>
 <pre>
 .align-baseline
 .align-top
 .align-middle
 .align-bottom
 </pre>
-<h5>Margin & Padding</h5>
+<h3>Margin & Padding</h3>
 <p>m = margin, p = padding. t = top, r = right, b = bottom, l = left, x = horizontal, y = vertical. 0 - 4 = smallest - largest.</p>
 <pre>
 .m0
@@ -892,7 +897,7 @@ etc.
 .py4
 .px4
 </pre>
-<h5>Borders</h5>
+<h3>Borders</h3>
 <pre>
 .border
 .border-top
@@ -909,7 +914,7 @@ etc.
 .rounded-left
 .not-rounded
 </pre>
-<h5>Position</h5>
+<h3>Position</h3>
 <pre>
 .relative
 .absolute
@@ -925,7 +930,7 @@ etc.
 .z3
 .z4
 </pre>
-<h5>Hide</h5>
+<h3>Hide</h3>
 <p>Mobile first, breakpoints assume screen-size and up much like the grid. Eg. .hide-tablet = .hide-tablet-and-up.
 <pre>
 .hide
@@ -935,7 +940,7 @@ etc.
 .hide-desktop
 .display-none
 </pre>
-<h5>Colors</h5>
+<h3>Colors</h3>
 <p>For background colors, prefix with 'bg-', eg. .bg-red.</p>
 <p>For border colors, prefix with 'border-', eg. .border-red. Ensure you add .border first.</p>
 <pre>
@@ -962,7 +967,7 @@ etc.
 .color-inherit
 .muted
 </pre>
-<h5>Darken / Lighten</h5>
+<h3>Darken / Lighten</h3>
 <pre>
 .bg-darken-1
 .bg-darken-2
@@ -974,7 +979,7 @@ etc.
 .bg-lighten-3
 .bg-lighten-4
 </pre>
-<h5>Background Images</h5>
+<h3>Background Images</h3>
 <pre>
 .bg-cover
 .bg-contain
