@@ -42,6 +42,7 @@
     "src"
   ],
   "dependencies": {
+    "gulp": "^3.9.1",
     "normalize.css": "latest"
   },
   "devDependencies": {
